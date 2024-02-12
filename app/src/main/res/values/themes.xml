@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BottomSheetWithInput" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="FullScreenDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="cornerFamily">rounded</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="Theme.BottomSheetWithInput" parent="Base.Theme.BottomSheetWithInput" >
+        <item name="bottomSheetDialogTheme">@style/FullScreenDialog</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="MyBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+    </style>
+</resources>
